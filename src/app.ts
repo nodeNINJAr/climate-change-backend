@@ -1,7 +1,7 @@
 import express, { Application, Request, Response } from "express";
 import cors from 'cors';
 import path from 'path';
-import routes from '../app/route/index';
+import routes from './route/index';
 
 
 const app:Application = express();

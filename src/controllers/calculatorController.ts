@@ -122,7 +122,7 @@ export const calculateDivisionHazard = async (req: Request, res: Response): Prom
     console.log(`Total criteria: ${totalCriteriaCount}, Sum: ${sumOfAllCriteriaValues}`);
     
     // CORRECT FORMULA: Sum of ALL criteria values / Total criteria count
-    const divisionAverageScore = sumOfAllCriteriaValues / totalCriteriaCount;
+    const divisionAverageScore = sumOfAllCriteriaValues / totalCriteriaCount * 3;
     const divisionRiskLevel = getRiskLevel(divisionAverageScore);
     
     const result = {
